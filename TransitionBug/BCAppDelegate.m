@@ -7,6 +7,7 @@
 //
 
 #import "BCAppDelegate.h"
+#import "BCViewController.h"
 
 @implementation BCAppDelegate
 
@@ -16,6 +17,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    BCViewController *vc = [BCViewController new];
+    self.window.rootViewController = vc;
+
     return YES;
 }
 
