@@ -39,7 +39,7 @@
         [dismissButton setTitle:@"Dismiss" forState:UIControlStateNormal];
         [dismissButton sizeToFit];
         dismissButton.center = CGPointMake(self.view.center.x, self.view.center.y + 50);
-        [dismissButton addTarget:self action:@selecto	r(tappedDismiss:) forControlEvents:UIControlEventTouchUpInside];
+        [dismissButton addTarget:self action:@selector(tappedDismiss:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:dismissButton];
     }
 }
